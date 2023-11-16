@@ -1,0 +1,24 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header {
+    grid-area: "header";
+}
+
+video {
+    display: none;
+}
+
+main {
+    grid-area: "main";
+}
+
+footer {
+    grid-area: "footer";
+}

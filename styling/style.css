@@ -30,6 +30,8 @@ ul {
     margin: 0;
 }
 
+/* header section */
+
 header {
     grid-area: header;
     margin: auto;
@@ -88,15 +90,48 @@ video {
 #overlay .yellowbutton {
     color: #000;
     font-weight: bold;
+    border: none;
 }
+
+/* main section */
 
 main {
     grid-area: main;
 }
 
+#about {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6bd43;
+    align-items: center;
+}
+
+#about img {
+    width: 80%;
+    height: auto;
+    margin: 40px auto;
+}
+
+#about h2, #about p {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+#about .yellowbutton {
+    display: block;
+    width: 40%;
+    margin: 2rem auto 5rem auto;
+    border: 2px solid;
+    font-weight: bold;
+}
+
+/* footer section */
+
 footer {
     grid-area: footer;
 }
+
+/* desktop section */
 
 @media only screen and (min-width: 600px) {
     #grid-container {

@@ -8,7 +8,8 @@ body {
     width: 100%;
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
 }
 
 h1, h2 {
@@ -125,10 +126,82 @@ main {
     font-weight: bold;
 }
 
+.services {
+    text-align: center;
+}
+
+.services i {
+    font-size: 25px;
+}
+
+.services p {
+    width: 60%;
+    margin: 3rem auto;
+}
+
+#email-signup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: #efefef;
+}
+
+#email-signup label {
+    width: 100%;
+    font-weight: bold;
+    margin: 3rem auto 1rem auto;
+    font-size: 20px;
+}
+
+#email-signup input {
+    padding: 12px;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+#email {
+    width: 50%;
+}
+
+#signup {
+    font-weight: bold;
+    background-color: #e6bd43;
+}
+
 /* footer section */
 
 footer {
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer ul {
+    display: flex;
+    gap: 30px;
+}
+
+#index-footer p, #index-footer ul {
+    display: none;
+}
+
+footer i {
+    font-size: 40px;
+    color: #fff;
 }
 
 /* desktop section */
@@ -155,4 +228,13 @@ footer {
         display: inline;
         width: 100%;
     }
+
+    #index-footer p {
+        display: block;
+    }
+
+    #index-footer ul {
+        display: flex;
+    }
+
 }

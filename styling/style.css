@@ -52,6 +52,16 @@ header nav img {
     width: 100px;
 }
 
+header nav li {
+    margin: 15px;
+}
+
+.linkstyle {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+}
+
 .yellowbutton {
     background-color:  #e6bd43;
     padding: 12px 17px;
@@ -60,10 +70,6 @@ header nav img {
 .yellowbutton a {
     color: #000;
     font-weight: bold;
-}
-
-header nav li {
-    margin: 15px;
 }
 
 #header-item {
@@ -127,15 +133,15 @@ main {
     font-weight: bold;
 }
 
-.services {
+#services {
     text-align: center;
 }
 
-.services i {
+#services i {
     font-size: 25px;
 }
 
-.services p {
+#services p {
     width: 60%;
     margin: 3rem auto;
 }
@@ -163,11 +169,6 @@ main {
 
 #email {
     width: 200px;
-}
-
-#signup {
-    font-weight: bold;
-    background-color: #e6bd43;
 }
 
 /* footer section */
@@ -205,6 +206,24 @@ footer i {
     color: #fff;
 }
 
+/* up link  */
+
+#up-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#252525;
+    padding: 20px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+#up-link i {
+    font-size: 30px;
+    color: #fff;
+
+}
+
 /* desktop section */
 
 @media only screen and (min-width: 600px) {
@@ -230,6 +249,11 @@ footer i {
         font-size: 20px;
         max-width: 900px;
         margin: 2rem auto;
+    }
+
+    .yellowbutton:hover, .yellowbutton:hover a, #overlay .yellowbutton:hover {
+        background-color: #000;
+        color:#e6bd43;
     }
 
     header {
@@ -297,28 +321,28 @@ footer i {
         width: 20%;
     }
 
-    .services {
+    #services {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 4rem;
     }
 
-    .services section {
+    #services section {
         width: 250px;
         margin-top: 2rem;
     }
     
-    .services h2 {
+    #services h2 {
         width: 100%;
         margin-top: 4rem;
     }
 
-    .services h3 {
+    #services h3 {
         font-size: 20px;
     }
 
-    .services p {
+    #services p {
         font-size: 16px;
         margin: auto;
     }

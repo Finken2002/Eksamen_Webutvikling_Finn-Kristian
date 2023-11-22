@@ -83,6 +83,7 @@ video {
 #overlay {
     position: absolute;
     height: 450px;
+    width: 100%;
     top: 0;
     text-align: center;
     background-color: rgba(150, 150, 150, 0.5)
@@ -113,7 +114,7 @@ main {
     margin: 40px auto;
 }
 
-#about h2, #about p {
+#about h3, #about p {
     width: 50%;
     margin: 1rem auto;
 }
@@ -161,7 +162,7 @@ main {
 }
 
 #email {
-    width: 50%;
+    width: 200px;
 }
 
 #signup {
@@ -208,18 +209,46 @@ footer i {
 
 @media only screen and (min-width: 600px) {
     #grid-container {
-        grid-template-areas: "header header header" "main main main" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    header ul {
-        display: flex;
+    h1 {
+        font-size: 60px;
     }
 
+    h2 {
+        font-size: 40px;
+        width: 600px;
+        margin: 2rem auto;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+
+    header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
     header nav {
         flex-direction: row;
         justify-content: space-between;
     }
 
+    header ul {
+        display: flex;
+        align-items: center;
+    }
+    
     #header-item img {
         display: none;
     }
@@ -227,6 +256,93 @@ footer i {
     video {
         display: inline;
         width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    main {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    article {
+        text-align: center;
+    }    
+
+    #about {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #about img {
+        width: 400px;
+        margin: 3rem;
+    }
+
+    #about article {
+        width: auto;
+        max-width: 800px;
+    }
+
+    #about h3, #about p {
+        width: auto;
+        text-align: left;
+        margin: 2rem;
+    }
+
+    #about .yellowbutton {
+        margin: 1rem 2rem;
+        width: 20%;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+
+    .services section {
+        width: 250px;
+        margin-top: 2rem;
+    }
+    
+    .services h2 {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .services h3 {
+        font-size: 20px;
+    }
+
+    .services p {
+        font-size: 16px;
+        margin: auto;
+    }
+    
+    #email-signup label {
+        font-size: 40px;
+        margin: 4rem auto 2rem auto;
+    }
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer a {
+        margin-left: 1rem;
+    }
+
+    footer ul {
+        margin-right: 1rem;
     }
 
     #index-footer p {

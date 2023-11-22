@@ -72,6 +72,8 @@ header nav li {
     font-weight: bold;
 }
 
+/* frontpage */
+
 #header-item {
     position: relative;
 }
@@ -92,7 +94,7 @@ video {
     width: 100%;
     top: 0;
     text-align: center;
-    background-color: rgba(150, 150, 150, 0.5)
+    background-color: rgba(150, 150, 150, 0.7)
 }
 
 #overlay .yellowbutton {
@@ -101,11 +103,31 @@ video {
     border: none;
 }
 
+/* products-page */
+
+#products-heading {
+    position: relative;
+    margin: auto;
+    top: 200px;
+}
+
+/* about-page */
+
+
 /* main section */
 
 main {
     grid-area: main;
 }
+
+hr {
+    height: 3px;
+    border: none;
+    background-color: #e6bd43;
+    margin: auto 3rem;
+}
+
+/* frontpage */
 
 #about {
     display: flex;
@@ -171,6 +193,27 @@ main {
     width: 200px;
 }
 
+/* products-page */
+
+#jobs ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+
+#jobs li {
+    border: 2px solid #252525;
+    margin: 6px;
+    padding: 6px;
+}
+
+#jobs li:nth-child(3) {
+    margin-right: 220px;
+}
+
+/* about-page */
+
+
 /* footer section */
 
 footer {
@@ -197,13 +240,15 @@ footer ul {
     gap: 30px;
 }
 
-#index-footer p, #index-footer ul {
-    display: none;
-}
-
 footer i {
     font-size: 40px;
     color: #fff;
+}
+
+/* frontpage  */
+
+#index-footer p, #index-footer ul {
+    display: none;
 }
 
 /* up link  */
@@ -251,6 +296,8 @@ footer i {
         margin: 2rem auto;
     }
 
+    /* header */
+
     .yellowbutton:hover, .yellowbutton:hover a, #overlay .yellowbutton:hover {
         background-color: #000;
         color:#e6bd43;
@@ -272,8 +319,10 @@ footer i {
         display: flex;
         align-items: center;
     }
+
+    /* frontpage */
     
-    #header-item img {
+    #frontpage {
         display: none;
     }
 
@@ -283,6 +332,14 @@ footer i {
         height: 450px;
         object-fit: cover;
     }
+
+    /* products-page */
+
+
+    /* about-page */
+
+
+    /* main */
 
     main {
         grid-column-start: 1;
@@ -294,6 +351,8 @@ footer i {
     article {
         text-align: center;
     }    
+
+    /* frontpage */
 
     #about {
         flex-direction: row;
@@ -352,6 +411,14 @@ footer i {
         margin: 4rem auto 2rem auto;
     }
 
+    /* products-page */
+
+
+    /* about-page */
+
+
+    /* footer */
+
     footer {
         grid-column-start: 1;
         grid-column-end: 4;
@@ -368,6 +435,8 @@ footer i {
     footer ul {
         margin-right: 1rem;
     }
+
+    /* frontpage */
 
     #index-footer p {
         display: block;

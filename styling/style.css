@@ -124,7 +124,11 @@ hr {
     height: 3px;
     border: none;
     background-color: #e6bd43;
-    margin: auto 3rem;
+    margin: auto 3rem 2rem 3rem;
+}
+
+.underline-header {
+    margin-bottom: 1rem;
 }
 
 /* frontpage */
@@ -211,6 +215,33 @@ hr {
     margin-right: 220px;
 }
 
+.styling {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 3rem;
+}
+
+.styling article {
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 100%;
+    min-width: 200px;
+    max-width: 692px;
+    text-align: left;
+}
+
+.styling h3 {
+    max-width: 100%;
+}
+
+.styling img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* about-page */
 
 
@@ -282,7 +313,6 @@ footer i {
 
     h2 {
         font-size: 40px;
-        width: 600px;
         margin: 2rem auto;
     }
 
@@ -413,9 +443,11 @@ footer i {
 
     /* products-page */
 
+    .underline-header {
+        margin-left: 3rem; 
+    }
 
     /* about-page */
-
 
     /* footer */
 
@@ -426,14 +458,7 @@ footer i {
         grid-row-end: 4;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    footer a {
-        margin-left: 1rem;
-    }
-
-    footer ul {
-        margin-right: 1rem;
+        padding: 1rem;
     }
 
     /* frontpage */
@@ -446,4 +471,31 @@ footer i {
         display: flex;
     }
 
+}
+
+/* media queries for artikkelkort */
+
+@media only screen and (min-width: 1000px) {
+    .underline-header {
+        margin-left: 4rem;
+    }
+
+    hr {
+        margin: auto 4rem 2rem 4rem;
+    }
+
+    #jobs ul {
+        margin: 4rem;
+    }
+
+    .styling article {
+        flex-basis: 40%;
+        margin: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .styling article {
+        flex-basis: 30%;
+    }
 }

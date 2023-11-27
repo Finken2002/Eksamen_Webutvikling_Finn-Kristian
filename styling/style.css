@@ -262,6 +262,74 @@ hr {
 
 /* about-page */
 
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    background-color: #e6bd43;
+    padding-bottom: 2rem;
+}
+
+#clients h2 {
+    width: 100%;
+}
+
+#contact-us {
+    padding: 2rem;
+    background-color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact-us h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    width: 90%;
+}
+
+#contact-us section {
+    width: 90%;
+    max-width: 500px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+#name, #subject {
+    height: 40px;
+    border: none;
+}
+
+#message {
+    resize: none;
+    height: 150px;
+    border: none;
+}
+
+#contact-us .yellowbutton {
+    margin-bottom: 4rem;
+}
+
+#contact-us i {
+    margin: 10px 20px 10px 0;
+    color: grey
+}
+
+#contact-us p {
+    margin: 0 0 1rem 0;    
+}
+
+.mail {
+    color: blue;
+    text-decoration: underline;
+}
 
 /* footer section */
 
@@ -386,6 +454,18 @@ footer i {
 
     /* about-page */
 
+    #header-item-about {
+        display: flex;
+        justify-content: right;
+    }
+
+    #overlay-about {
+        width: 50%;
+    }
+
+    #overlay-about h1 {
+        font-size: 20px;
+    }
 
     /* main */
 
@@ -496,7 +576,7 @@ footer i {
 
 }
 
-/* media queries for artikkelkort */
+/* media queries for artikkelkort og contact-us seksjonen */
 
 @media only screen and (min-width: 1000px) {
     .underline-header {
@@ -514,6 +594,16 @@ footer i {
     .styling article {
         flex-basis: 40%;
         margin: 1rem;
+    }
+
+    /* about-page */
+
+    #contact-us {
+        justify-content: space-around;
+    }
+
+    #contact-us .yellowbutton {
+        margin: 0;
     }
 }
 

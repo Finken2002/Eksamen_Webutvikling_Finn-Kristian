@@ -63,11 +63,9 @@ header nav li {
 }
 
 .yellowbutton {
+    display: inline-block;
     background-color:  #e6bd43;
     padding: 12px 17px;
-}
-
-.yellowbutton a {
     color: #000;
     font-weight: bold;
 }
@@ -81,7 +79,7 @@ header nav li {
 #header-item img {
     width: 100%;
     height: 450px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 video {
@@ -97,12 +95,6 @@ video {
     background-color: rgba(150, 150, 150, 0.7)
 }
 
-#overlay .yellowbutton {
-    color: #000;
-    font-weight: bold;
-    border: none;
-}
-
 /* products-page */
 
 #products-heading {
@@ -113,6 +105,33 @@ video {
 
 /* about-page */
 
+#header-item-about {
+    box-sizing: border-box;
+    padding: 3rem;
+    background-image: url("../img/header-img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+#overlay-about {
+    position: relative;
+    text-align: left;
+    padding: 3rem;
+    background-color: rgba(220, 220, 220, 0.8);
+}
+
+#overlay-about h1 {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+#overlay-about p, #overlay-about h2 {
+    margin: 1rem 0;
+}
 
 /* main section */
 
@@ -156,7 +175,6 @@ hr {
     width: 40%;
     margin: 2rem auto 5rem auto;
     border: 2px solid;
-    font-weight: bold;
 }
 
 #services {
@@ -328,7 +346,7 @@ footer i {
 
     /* header */
 
-    .yellowbutton:hover, .yellowbutton:hover a, #overlay .yellowbutton:hover {
+    .yellowbutton:hover, .yellowbutton:hover a {
         background-color: #000;
         color:#e6bd43;
     }
@@ -445,6 +463,11 @@ footer i {
 
     .underline-header {
         margin-left: 3rem; 
+    }
+
+    .styling article:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
     }
 
     /* about-page */

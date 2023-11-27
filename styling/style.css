@@ -370,12 +370,6 @@ footer i {
     color: #fff;
 }
 
-/* frontpage  */
-
-#index-footer p, #index-footer ul {
-    display: none;
-}
-
 /* up link  */
 
 #up-link {
@@ -566,17 +560,6 @@ footer i {
         padding: 1rem;
         height: 250px;
     }
-
-    /* frontpage */
-
-    #index-footer p {
-        display: block;
-    }
-
-    #index-footer ul {
-        display: flex;
-    }
-
 }
 
 /* media queries for artikkelkort og contact-us seksjonen */

@@ -315,6 +315,8 @@ hr {
 
 #contact-us .yellowbutton {
     margin-bottom: 4rem;
+    border: none;
+    width: 150px;
 }
 
 #contact-us i {

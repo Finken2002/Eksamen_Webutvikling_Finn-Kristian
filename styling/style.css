@@ -139,17 +139,6 @@ main {
     grid-area: main;
 }
 
-hr {
-    height: 3px;
-    border: none;
-    background-color: #e6bd43;
-    margin: auto 3rem 2rem 3rem;
-}
-
-.underline-header {
-    margin-bottom: 1rem;
-}
-
 /* frontpage */
 
 #about {
@@ -216,6 +205,17 @@ hr {
 }
 
 /* products-page */
+
+hr {
+    height: 3px;
+    border: none;
+    background-color: #e6bd43;
+    margin: auto 3rem 2rem 3rem;
+}
+
+.underline-header {
+    margin-bottom: 1rem;
+}
 
 #jobs ul {
     display: flex;
@@ -391,7 +391,6 @@ footer i {
 #up-link i {
     font-size: 30px;
     color: #fff;
-
 }
 
 /* desktop section */
@@ -456,9 +455,6 @@ footer i {
         height: 450px;
         object-fit: cover;
     }
-
-    /* products-page */
-
 
     /* about-page */
 
@@ -558,8 +554,6 @@ footer i {
         transition: transform 0.3s ease;
     }
 
-    /* about-page */
-
     /* footer */
 
     footer {
@@ -588,6 +582,9 @@ footer i {
 /* media queries for artikkelkort og contact-us seksjonen */
 
 @media only screen and (min-width: 1000px) {
+
+    /* products-page */
+
     .underline-header {
         margin-left: 4rem;
     }
@@ -617,6 +614,9 @@ footer i {
 }
 
 @media only screen and (min-width: 1300px) {
+
+    /* products-page */
+
     .styling article {
         flex-basis: 30%;
     }

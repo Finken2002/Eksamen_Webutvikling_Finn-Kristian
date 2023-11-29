@@ -1,6 +1,12 @@
 # Eksamen_Webutvikling_Finn-Kristian
 
+Jeg har gått for karakter A.
+
 Kilder:
+
+Ingen deler av koden er kopiert fra kildene, eller avviker fra det vi har lært i kurset. 
+Kildene under er kun brukt til å gi mer forståelse for de ulike temaene.
+Den eneste koden som muligens avviker fra kurset er nth-child, og den er derfor kommentert i style.css.
 
 video html: https://www.w3schools.com/html/html5_video.asp
 
@@ -18,6 +24,9 @@ iframe html: https://www.w3schools.com/html/html_iframe.asp
 
 opengraph metadata: https://ogp.me
 
+mikrodata: https://schema.org
+
+
 Kilder til bilder:
 
-Bilde header forside(header-img.jpeg): https://pixabay.com/photos/computer-laptop-work-place-mouse-2982270/
+Bilde header forside(header-img.jpeg): Image by https://pixabay.com/users/skitterphoto-324082/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2982270 Rudy and Peter Skitterians from "https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2982270" Pixabay

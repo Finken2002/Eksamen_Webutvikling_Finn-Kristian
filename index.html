@@ -16,7 +16,7 @@
     <meta property="og:image" content="logo1.png">
     <!-- Over skulle det vært brukt et bilde som representerer bedriften -->
     <meta property="og:description" content="Our company is.. and we offer..">
-    <meta propertu="og:site_name" content="Companyname">
+    <meta property="og:site_name" content="Companyname">
 
     <!-- Linker -->
     <link rel="stylesheet" href="icons/css/brands.css">
@@ -57,9 +57,9 @@
             </section>
         </header>
         <main>
-            <article>
-                <h2>Engaging subheading. What can you help your visitors with?</h2>
-                <p>
+            <article itemscope itemtype="https://schema.org/Article">
+                <h2 itemprop="headline">Engaging subheading. What can you help your visitors with?</h2>
+                <p itemprop="description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Neque aliquam vestibulum morbi blandit cursus risus at ultrices.
                     Et molestie ac feugiat sed lectus vestibulum.
@@ -68,9 +68,9 @@
             <section id="about">
                 <img src="img/placeholder.png" alt="Placeholder picture that says 400 x 400" title="About image">
                 <!-- Bildet over er innhold, tatt i utgangspunkt at det skulle vært et relevant bilde, og ikke en placeholder -->
-                <article>
-                    <h3>About Our Company</h3>
-                    <p>
+                <article itemscope itemtype="https://schema.org/Article">
+                    <h3 itemprop="headline">About Our Company</h3>
+                    <p itemprop="description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Dui id ornare arcu odio. Ullamcorper velit sed ullamcorper morbi tincidunt. 
                         Posuere morbi leo urna molestie at. Morbi quis commodo odio aenean sed adipiscing. Curabitur gravida arcu ac tortor. 
@@ -81,25 +81,25 @@
             </section>
             <section id="services">
                 <h2>Our Services</h2>
-                <article>
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-users"></i>
-                    <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 itemprop="name">Branding</h3>
+                    <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
-                <article>
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 itemprop="name">Branding</h3>
+                    <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
-                <article>
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-code"></i>
-                    <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 itemprop="name">Branding</h3>
+                    <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
-                <article>
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-wifi"></i>
-                    <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 itemprop="name">Branding</h3>
+                    <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
             </section>
                 <form id="email-signup" aria-label="Newsletter signup">

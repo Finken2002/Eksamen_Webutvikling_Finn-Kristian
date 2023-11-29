@@ -16,7 +16,7 @@
     <meta property="og:image" content="logo1.png">
     <!-- Over skulle det vært brukt et bilde som representerer about siden -->
     <meta property="og:description" content="Learn about our company">
-    <meta propertu="og:site_name" content="Companyname">
+    <meta property="og:site_name" content="Companyname">
 
     <!-- Linker -->
     <link rel="stylesheet" href="icons/css/brands.css">
@@ -41,9 +41,9 @@
                 </ul>
             </nav>
             <section id="header-item-about">
-                <div id="overlay-about" itemscope itemtype="https://schema.org/Organization">
+                <div itemscope itemtype="https://schema.org/Organization" id="overlay-about">
                     <h1 itemprop="name">Company name</h1>
-                    <h2 itemprop="headline">About Our Company</h2>
+                    <h2>About Our Company</h2>
                     <p itemprop="description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Morbi blandit cursus risus at ultrices mi. Id neque aliquam vestibulum morbi blandit cursus risus. 
@@ -59,34 +59,39 @@
         <main>
             <section id="services">
                 <h2>Our Services</h2>
-                <article itempscope itemtype="https://schema.org/Service">
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-users"></i>
                     <h3 itemprop="name">Branding</h3>
                     <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
-                <article itempscope itemtype="https://schema.org/Service">
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
                     <h3 itemprop="name">Branding</h3>
                     <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
-                <article itempscope itemtype="https://schema.org/Service">
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-code"></i>
                     <h3 itemprop="name">Branding</h3>
                     <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
-                <article itempscope itemtype="https://schema.org/Service">
+                <article itemscope itemtype="https://schema.org/Service">
                     <i class="fa-solid fa-wifi"></i>
                     <h3 itemprop="name">Branding</h3>
                     <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
             </section>
-            <section id="clients">
+            <section itemscope itemtype="https://schema.org/Organization" id="clients">
                 <h2>Some of our clients</h2>
-                <img src="img/logo1.png" alt="A round logo that says ILOCEAM PLEAM" title="Clientname 1">
+                <img itemprop="logo" src="img/logo1.png" alt="A round logo that says ILOCEAM PLEAM" title="Clientname 1">
                 <!-- Bildet over er innhold -->
-                <img src="img/logo2.png" alt="A round logo with to lines that each has to triangles on the side" title="Clientname 2">
+                <meta itemprop="name" content="Clientname">
+
+                <img itemprop="logo" src="img/logo2.png" alt="A round logo with to lines that each has to triangles on the side" title="Clientname 2">
                 <!-- Bildet over er innhold -->
-                <img src="img/logo3.png" alt="A diamondshaped logo that says Aca" title="Clientname 3">
+                <meta itemprop="name" content="Clientname">
+
+                <img itemprop="logo" src="img/logo3.png" alt="A diamondshaped logo that says Aca" title="Clientname 3">
+                <meta itemprop="name" content="Clientname">
                 <!-- Bildet over er innhold -->
             </section>
             <section id="contact-us">
@@ -109,10 +114,10 @@
                         Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. 
                         A lacus vestibulum sed arcu non odio euismod. Fermentum dui faucibus in ornare quam viverra orci sagittis eu.
                     </p>
-                    <ul>
-                        <li><i class="fa-solid fa-location-pin"></i>B R A Veien 4, 1757 Halden</li>
-                        <li><i class="fa-solid fa-phone"></i>69 60 80 00</li>
-                        <li class="mail"><i class="fa-solid fa-envelope"></i>postmottak@hiof.no</li>
+                    <ul itemscope itemtype="https://schema.org/PostalAddress">
+                        <li><i class="fa-solid fa-location-pin"></i><span itemprop="streetAddress">B R A Veien 4</span>, <span itemprop="postalCode">1757</span> <span itemprop="addressLocality">Halden</span></li>
+                        <li><i class="fa-solid fa-phone"></i><span itemprop="telephone">69 60 80 00</span></li>
+                        <li class="mail"><i class="fa-solid fa-envelope"></i><span itemprop="email">postmottak@hiof.no</span></li>
                     </ul>
                 </section>
             </section>
@@ -122,10 +127,10 @@
             <a href="index.html" title="Go to frontpage" aria-label="Go to frontpage"><img src="img/logo1.png" alt="En rund logo for nettsiden hvor det står ILOCEAM PLEAM"></a>
             <!-- Bildet over er innhold -->
             <p>Companyrights Companyname 2023</p>
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank" title="Go to facebook.com" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank" title="Go to instagram.com" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com" target="_blank" title="Go to linkedin.com" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+            <ul itemscope itemtype="https://schema.org/Organization">
+                <li><a itemprop="sameAs" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Go to facebook.com" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a itemprop="sameAs" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="Go to instagram.com" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a itemprop="sameAs" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="Go to linkedin.com" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </footer>
     </div>
